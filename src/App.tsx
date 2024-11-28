@@ -1,6 +1,14 @@
+import Header from "./components/header/Header"
+import SearchBar from "./components/searchBar/SearchBar"
+import UserData from "./components/userData/UserData"
+
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <Header />
+      <SearchBar />
+      <UserData />
+    </>
   )
 }
 

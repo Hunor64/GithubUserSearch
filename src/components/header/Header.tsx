@@ -12,11 +12,11 @@ const Header = (props: HeaderProps) => {
 		<div className="header">
 			<h1 className="websiteName">devfinder</h1>
 			<button className="toggleButton" onClick={props.toggleDarkMode}>
+                {!props.darkMode ? "DARK" : "LIGHT"}
 				<img
 					src={!props.darkMode ? DarkIcon : LightIcon}
 					alt={!props.darkMode ? "Dark Icon" : "Light Icon"}
 				/>
-				{!props.darkMode ? "DARK" : "LIGHT"}
 			</button>
 		</div>
 	)

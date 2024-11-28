@@ -1,0 +1,35 @@
+.search-form {
+    position: relative;
+    margin-bottom: 20px;
+    color: var(--text-color-two);
+}
+
+.userInput {
+    color: inherit;
+    background-color: var(--app-bg);
+    border: none;
+    width: 100%;
+    padding: 20px 50px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    font-family: inherit;
+}
+
+.searchIcon,
+.searchButton {
+    position: absolute;
+    top: 25%;
+}
+
+.searchIcon {
+    left: 10px;
+    width: 34px;
+}
+
+.searchButton {
+    right: 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #007eff;
+    padding: 2px;
+}

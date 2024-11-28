@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.websiteName {
+    color: var(--text-color-two);
+    font-size: 26px;
+}

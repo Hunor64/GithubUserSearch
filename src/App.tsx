@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import Header from "./components/header/Header"
 import SearchBar from "./components/searchBar/SearchBar"
 import UserData from "./components/userData/UserData"
+import { UserDataType } from "./components/type/userdata"
 
 const App = () => {
 	const [darkMode, setDarkMode] = useState(() => {
@@ -20,16 +21,17 @@ const App = () => {
 	useEffect(() => {
 		document.body.className = darkMode ? "dark" : "light"
 	})
-
-  const [userName, setUserName] = useState("")
   
+  const [userName, setUserName] = useState({})
+
+  const handleSetUsername = (username: UserDataType) => {setUserName(username)}
 
 	return (
 		<div className="app">
 			<div className="container">
 				<Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-				<SearchBar />
-				<UserData />
+				<SearchBar saveUserData={handleSetUsername}/>
+				<UserData userdata={userName}/>
 			</div>
 		</div>
 	)
